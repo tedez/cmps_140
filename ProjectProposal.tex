@@ -1,0 +1,174 @@
+% LaTeX Example: Project Report
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl}
+\usepackage[T1]{fontenc}
+\usepackage{fourier}
+
+\usepackage{hyperref}
+\usepackage[english]{babel}															% English language/hyphenation
+\usepackage[protrusion=true,expansion=true]{microtype}	
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage[pdftex]{graphicx}	
+\usepackage{url}
+
+\usepackage[utf8]{inputenc}
+\usepackage{fancyhdr} % Required for custom headers
+\usepackage{lastpage} % Required to determine the last page for the footer
+\usepackage{extramarks} % Required for headers and footers
+\usepackage{graphicx} % Required to insert images
+\usepackage{lipsum} % Used for inserting dummy 'Lorem ipsum' text into the template
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{listings}
+\usepackage{color}
+%\usepackage{slashbox}
+\usepackage{verbatim}
+\usepackage{graphicx}
+
+\usepackage{fancybox}
+\usepackage{tikz}
+
+ \usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+ 
+\usepackage{amsthm}
+ 
+\usepackage[colorinlistoftodos]{todonotes}
+\usepackage{algorithm}
+\usepackage{algpseudocode}
+
+\usepackage{color} %for colored boxes
+\usepackage{empheq}
+
+\usepackage{listings} %to include Code
+
+\usepackage{geometry}
+ \geometry{
+ a4paper,
+ total={210mm,297mm},
+ left=20mm,
+ right=20mm,
+ top=20mm,
+ bottom=20mm,
+ }
+
+%%% Custom sectioning
+\usepackage{sectsty}
+\allsectionsfont{\centering \normalfont\scshape}
+
+
+%%% Custom headers/footers (fancyhdr package)
+\usepackage{fancyhdr}
+\pagestyle{fancyplain}
+\fancyhead{}											% No page header
+\fancyfoot[L]{}											% Empty 
+\fancyfoot[C]{}											% Empty
+\fancyfoot[R]{\thepage}									% Pagenumbering
+\renewcommand{\headrulewidth}{0pt}			% Remove header underlines
+\renewcommand{\footrulewidth}{0pt}				% Remove footer underlines
+\setlength{\headheight}{13.6pt}
+
+
+%%% Equation and float numbering
+\numberwithin{equation}{section}		% Equationnumbering: section.eq#
+\numberwithin{figure}{section}			% Figurenumbering: section.fig#
+\numberwithin{table}{section}				% Tablenumbering: section.tab#
+
+
+%%% Maketitle metadata
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} 	% Horizontal rule
+
+\title{
+		%\vspace{-1in} 	
+		\usefont{OT1}{bch}{b}{n}
+		\normalfont \normalsize \textsc{Project Proposal} \\ [25pt]
+		\horrule{0.5pt} \\[0.4cm]
+		\huge Really Cool Title Of Your Project
+ \\
+		\horrule{2pt} \\[0.5cm]
+}
+\author{
+		\normalfont 								\normalsize
+       Name Name \\\normalsize Name Name \\  \normalsize Name Name \\[0.8cm]	
+          \small{\today} 
+}
+\date{}
+
+\usepackage{array}
+\newcolumntype{L}[1]{>{\raggedright\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{C}[1]{>{\centering\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+\newcolumntype{R}[1]{>{\raggedleft\let\newline\\\arraybackslash\hspace{0pt}}m{#1}}
+
+%%% Begin document
+\begin{document}
+\maketitle
+
+
+\section{\textbf{Overview}}
+General description of the project. 
+	 
+\section{\textbf{Data}}
+What data will you be using, what does data look like, where will you get the data, etc. 
+
+\section{\textbf{Goal}}
+What's the end goal of the project?
+Optionally, you may divide the goals into sub goals like a basic goal and a stretch goal. 
+
+\subsection{basic goal}
+We will at least finish this part to have a complete project. 
+
+\subsection{stretch goal}
+If we have time and the aspiration, we would like to do this more advanced part. 
+
+\section{\textbf{Method}}
+How will you approach your problem?
+How will you validate your results?
+
+You may divide the method into different parts. 
+
+\subsection{step 1}
+We will do this thing first
+
+\subsection{step 2}
+And we will do this thing next
+
+\subsection{step ....}
+More steps.
+
+
+\section{\textbf{References}}
+\begin{itemize}
+\item 
+Ref 1
+\item
+Ref 2
+\end{itemize}
+
+
+
+\section{\textbf{Appendix}}
+Additional information
+\subsection{Appendix 1: Someting}
+here is some table, or list, or plot, or picture, or something you want to attach as appendix
+
+\subsection{Appendix 2: Timelines and List of Tasks}
+Week 3
+						
+\begin{itemize}
+\item 
+thing 1
+\item
+Thing2
+\end{itemize}					
+Week 4
+\begin{itemize}
+\item
+Thing 1
+\item
+Thing 2
+\end{itemize}								
+.....
+								
+
+%%% End document
+\end{document}

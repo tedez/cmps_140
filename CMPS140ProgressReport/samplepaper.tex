@@ -1,0 +1,206 @@
+% This is samplepaper.tex, a sample chapter demonstrating the
+% LLNCS macro package for Springer Computer Science proceedings;
+% Version 2.20 of 2017/10/04
+%
+\documentclass[runningheads]{llncs}
+%
+%\usepackage{subcaption}
+
+\usepackage{times}
+\usepackage{latexsym}
+\usepackage{graphicx}
+\usepackage{tabularx}
+\usepackage{booktabs}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage{amsmath}
+\usepackage{comment}
+\usepackage{pgfplots,wrapfig}
+\usepackage{color}
+\usepackage{xcolor,colortbl}
+\usepackage{enumitem}
+\usepackage{amssymb}
+\usepackage{array}
+\usepackage[toc,page]{appendix}
+
+\newcommand{\ra}[1]{\renewcommand{\arraystretch}{#1}}
+\newcolumntype{P}[1]{>{\centering\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\pgfplotsset{compat=1.12}
+
+% Used for displaying a sample figure. If possible, figure files should
+% be included in EPS format.
+%
+% If you use the hyperref package, please uncomment the following line
+% to display URLs in blue roman font according to Springer's eBook style:
+% \renewcommand\UrlFont{\color{blue}\rmfamily}
+
+\begin{document}
+%
+\title{CMPS 140 Progress Report: Project Title}
+%
+\titlerunning{CMPS 140 Artificial Intelligence Project Progress Report}
+% If the paper title is too long for the running head, you can set
+% an abbreviated paper title here
+%
+\author{Student Name \and Student Name \and Student Name }
+%
+%\authorrunning{F. Last et al.}
+% First names are abbreviated in the running head.
+% If there are more than two authors, 'et al.' is used.
+%
+\institute{
+%UC Santa Cruz, 1156 High Street, Santa Cruz 95064, California\\
+\email{\{cruzid,cruzid,cruzid\}@ucsc.edu}}
+%
+\maketitle              % typeset the header of the contribution
+%
+%\begin{abstract}
+%Abstraction
+%\keywords{key1  \and key2}
+%\end{abstract}
+%
+%
+%
+\section{Introduction}
+
+Please summarize your project progress. You can update Section~\ref{sec:goal} and Section~\ref{sec:related_work} if you have made any changes. The purpose of this progress report is to check whether you have follow your plan in the proposal, and whether the project can be finish before the quarter ends.
+
+\subsection{Goal and Impacts:}
+\label{sec:goal}
+Describe your project idea, and the broader impacts of the proposed work.
+
+\subsection{Related Work}
+\label{sec:related_work}
+Please cite the related work that inspires you or the one that you want to improve.
+
+\section{Data}
+Please describe the dataset you have been working on, and cite the resource data. Please illustrate the label distributions of your data, which are important guides for evaluation of model performance. For example, x\% of the data are positive and 1-x\% of the data are negative. Moreover, if you split your data into a training set and test set, please mention the split percentage. 
+
+\section{Methodology}
+Please describe the input-output behavior of your system, and cite the resource code, and paper.
+\subsection{Features}
+Please describe the features if you extracted them from the data.
+
+\subsection{Baselines}
+Please describe the baseline models if you've implemented the baseline.
+
+\subsection{Stretch Methods}
+Please describe the stretch models if you've implemented them.
+
+\section{Evaluation}
+Please describe your evaluation metric for success. 
+
+\section{Updated Milestones}
+\label{sec:milestones}
+Please describe your subgoals for the project as Table~\ref{tab:milestones}, and show the progress. Note that the progress must be consistent with this report and your previous proposal. If you have marked the task as \emph{Done}, you should describe the details in the above Sections. You may use a table, image, diagram, screenshot, or evaluation results to demonstrate your progress in the corresponding sections.
+
+
+\begin{table}
+\centering
+\begin{small}
+\begin{tabular}{|l| l| l|} 
+\hline
+\bfseries date & \bfseries task & \bfseries progress  \\ 
+\hline
+\textbf{01/23/19}  
+& Submit a project proposal. (1 page)    
+& Done               \\ 
+\hline
+02/06/19 
+& Collect the dataset, begin to implement the baseline models.   
+&     Done (100\%)            \\ 
+\hline
+\textbf{02/15/19}     
+&   Complete the baselines \& submit a progress report (3 - 4 pages).     
+&   Done (100\%)             \\ 
+\hline
+02/20/19    
+&    implement the stretch models.      &      In Progress (10\%)           \\ 
+\hline
+02/27/19 & Complete the stretch models \& begin the evaluation.    
+&  Not Start (0\%)         \\ 
+\hline
+03/06/19 
+&     Finish the evaluation \& work on the poster and the final report.
+&     Not Start (0\%)           \\ 
+\hline
+03/14/19        
+&    Poster presentation.   
+&    Not Start (0\%)       \\
+\hline
+\textbf{03/17/19}        
+&    Submit final project report (5 - 7 pages).
+&    Not Start (0\%)       \\
+\hline
+\end{tabular}
+\end{small}
+\caption{The updated milestones.}\label{tab:milestones}
+\end{table}
+
+%\begin{itemize}
+%\item \textbf{01/23/19:} submit a project proposal (1 page);
+%\item 02/06/19: collect the dataset, begin to implement the baseline models;
+%\item \textbf{02/15/19:} complete the baseline models and submit a progress report (3 - 4 pages);
+%\item 02/20/19: implement the advanced models;
+%\item 02/27/19: complete the advanced models and begin to evaluate the model;
+%\item 03/06/19: finish the evaluation and begin to work on the poster and the final report;
+%\item \textbf{03/14/19:} poster presentation;
+%\item \textbf{03/17/19:} submit final project report (5 - 7 pages).
+%\end{itemize}
+
+
+%
+% ---- Bibliography ----
+%
+% BibTeX users should specify bibliography style 'splncs04'.
+% References will then be sorted and formatted in the correct style.
+%
+% \bibliographystyle{splncs04}
+% \bibliography{mybibliography}
+%
+\begin{thebibliography}{8}
+
+\bibitem{happydb}
+Asai A.\& Evensen S.\& Golshan B.\& Halevy A.\& Li V., Lopatenko A.\& Stepanov D.\& Suhara Y.\& Tan W.C.\& Xu Y.: Happydb: A corpus of 100,000 crowdsourced happy moments. In Proceedings of LREC 2018. European Language Resources Association(ELRA) (2018)
+
+
+               
+%\bibitem{ref_article1}
+%Author, F.: Article title. Journal \textbf{2}(5), 99--110 (2016)
+
+%\bibitem{ref_lncs1}
+%Author, F., Author, S.: Title of a proceedings paper. In: Editor,
+%F., Editor, S. (eds.) CONFERENCE 2016, LNCS, vol. 9999, pp. 1--13.
+%Springer, Heidelberg (2016). \doi{10.10007/1234567890}
+
+%\bibitem{ref_book1}
+%Author, F., Author, S., Author, T.: Book title. 2nd edn. Publisher,
+%Location (1999)
+
+%\bibitem{ref_proc1}
+%Author, A.-B.: Contribution title. In: 9th International Proceedings
+%on Proceedings, pp. 1--2. Publisher, Location (2010)
+
+%\bibitem{ref_url1}
+%LNCS Homepage, \url{http://www.springer.com/lncs}. Last accessed 4
+%Oct 2017
+\end{thebibliography}
+
+
+
+\appendix
+%\appendixpage
+%\addappheadtotoc
+\section{Appendix: Tables and Images}
+
+
+
+\end{document}
+
+
+
+
+
+
+
